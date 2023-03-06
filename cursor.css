@@ -1,0 +1,23 @@
+#cursor {
+	position: absolute;
+	width: 17px;
+	height: 17px;
+	background-color: var(--accent);
+	z-index: 10000;
+	border-radius: 100%;
+	user-select: none;
+	pointer-events: none;
+	margin: -8.5px 0 0 -8.5px;
+	transform: scale(1);
+	transition: transform .65s cubic-bezier(.75, -1.27, .3, 2.33);
+}
+
+#cursor.active {
+	transform: scale(3.4);
+	background-color: rgba(255, 255, 255, .1);
+	border: .1px solid var(--accent);
+}
+
+#cursor.hidden {
+	transform: scale(.001);
+}
